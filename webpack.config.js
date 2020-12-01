@@ -7,7 +7,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
   entry: {
-    script: "./js/_script.js",
+    script: "./src/js/script.js",
   },
 
   output: {
@@ -18,8 +18,12 @@ module.exports = {
   plugins: [
     // Generating HTML
     new HtmlWebpackPlugin({
-      template: "pug/_index.pug",
+      template: "./src/pages/index.pug",
       filename: "index.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/settings.pug",
+      filename: "settings.html",
     }),
     new HtmlWebpackPugPlugin(),
 
