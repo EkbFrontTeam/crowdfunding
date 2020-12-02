@@ -1,3 +1,28 @@
 header
-  a(href='index.html') index
-  a(href='settings.html') settings
+  a(class="header__logo" href='index.html')
+    div(class="header_logo__icon flex")
+      img(src="../../img/icon/header/top_logo_icon.png")
+    h1(class="header_logo__title") Pro-Promotion.com
+  ul(class="header__bar")
+    li
+      a(class="header_bar__link" href="#")
+        i(class="fas fa-th-large")
+        p Task list
+    li
+      a(class="header_bar__link" href="#")
+        i(class="fas fa-globe-africa")
+        p News
+    li
+      a(class="header_bar__link" href="#")
+        i(class="fas fa-question-circle")
+        p Help
+  div(class="header__profile")
+    ul(class="header_profile__bar")
+      button(class="profile_bar__btn flex")
+        img(src="../../img/icon/header/plus_money_icon.png")
+      img(src="../../img/icon/header/money_icon.png")
+      p(class="profile_bar__indicator") 2023
+    a(href="#")
+    button(class="header_profile__btn")
+      img(src="../../img/icon/header/avatar_icon.png")
+      i(class="fas fa-chevron-down")
