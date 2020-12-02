@@ -1,5 +1,7 @@
 @import "reset.css";
 @import "global.css";
 
-@import "components/header.css";
-@import "components/footer.css";
+@import "../components/header/header.css";
+@import "../components/footer/footer.css";
+
+@import "./pages/index.css";
