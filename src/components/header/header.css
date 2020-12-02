@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  padding: 20px 30px;
+  padding: 12px 30px;
   border-bottom: 2px solid var(--light_grey);
   margin-bottom: 20px;
   display: flex;
