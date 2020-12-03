@@ -1,22 +1,11 @@
-@import "../../fonts/sfpro/stylesheet.css";
-@import "../progressTable/progressTable.css";
+@import "../progress.css";
 
-.container {
-  max-width: 1220px;
-  width: 100%;
-  margin: 0 auto;
+th {
+  font-size: 14px;
+  line-height: 20px;
+  color: #5f5f6e;
 }
 
-.main_title {
-  font-family: "SF Pro Display", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 30px;
-  color: #ffffff;
-}
-
-.main_wrapper {
-  background: #131419;
-  padding: 50px 0 40px 0;
+td {
+  font-size: 16px;
 }
