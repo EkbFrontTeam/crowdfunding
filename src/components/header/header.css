@@ -51,6 +51,7 @@ header {
 }
 
 .header_profile {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -95,4 +96,80 @@ header {
 
 .header_profile_btn:hover {
   color: var(--blue);
+}
+
+.header_profile_menu {
+  display: none;
+  position: fixed;
+  width: 100%;
+  max-width: 254px;
+  padding: 0 20px;
+  background: var(--gray);
+  top: 62px;
+  z-index: 1000;
+  border-radius: 15px;
+  border: 2px solid var(--light_grey);
+}
+
+.header_profile_link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--white); 
+  font-size: 15px;
+  padding: 20px 0;
+}
+
+.header_profile_link p {
+  margin-left: 10px;
+}
+
+.header_profile_menu li:nth-child(n+2):nth-child(-n+3) 
+.header_profile_link {
+  border-bottom: 1px solid var(--light_grey);
+}
+
+.header_profile_menu li:hover:nth-child(-n+2) 
+.header_profile_link {
+  color: var(--blue);
+}
+
+.header_profile_menu li:nth-child(3) 
+.header_profile_link {
+  cursor: auto;
+}
+
+.header_profile_menu li:hover:last-child 
+.header_profile_link {
+  color: var(--red);
+}
+
+.header_profile_checkbox {
+  display: flex;
+  width: 44px;
+  height: 24px;
+  background: var(--light_grey);
+  margin-left: auto;
+  border-radius: 15px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.profile_checkbox_element {
+  display: none;
+  width: 19px;
+}
+
+.profile_checkbox_ellipse {
+  height: 18px;
+  width: 18px;
+  background: var(--blue);
+  border-radius: 50%;
+}
+
+.profile_checkbox_ellipse_click {
+  height: 18px;
+  width: 18px;
+  background: var(--white);
+  border-radius: 50%;
 }

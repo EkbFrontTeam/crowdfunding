@@ -26,3 +26,23 @@ header
     button(class="header_profile_btn")
       img(src="../../img/header/avatar_icon.png")
       i(class="fas fa-chevron-down")
+    ul(class="header_profile_menu")
+      li
+        a(class="header_profile_link" href="#")
+          i(class="fas fa-user")
+          p My profile
+      li
+        a(class="header_profile_link" href="#")
+          i(class="fas fa-th-large")
+          p Task history
+      li
+        a(class="header_profile_link" href="#")
+          i(class="fas fa-sun")
+          p Dark mode 
+          div(class="header_profile_checkbox")
+            div(class="profile_checkbox_element")
+            div(class="profile_checkbox_ellipse" id="profile_checkbox_click")
+      li
+        a(class="header_profile_link" href="#")
+          i(class="fas fa-sign-out-alt")
+          p Log out
