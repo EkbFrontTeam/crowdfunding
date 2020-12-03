@@ -3,5 +3,6 @@
 
 @import "../components/header/header.css";
 @import "../components/footer/footer.css";
+@import "../components/progress/progress.css";
 
 @import "./pages/index.css";
