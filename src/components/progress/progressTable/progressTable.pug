@@ -1,33 +1,31 @@
-.table-container
-    table
-        thead
-            tr
-                th Статус
-                th Имя проекта
-                th Прогресс
-                th Осталось
-            tr
-        tbody
-            tr
-                td В процессе
-                td Проект 1
-                td 
-                    progress(max='100' value='70')/
-                td 30%
-            tr
-            tr
-                td В процессе
-                td Проект 2
-                td 
-                    progress(max='100' value='40')/
-                td 60%
-            tr
-            tr
-                td Завершено
-                td Проект 3
-                td 
-                    progress(max='100' value='100')/
-                td 0%
-            tr
-        tbody
-    table
+table
+    thead
+        tr(class='table-row table-head')
+            th Статус
+            th Имя проекта
+            th Прогресс
+            th Сумма доната
+    tbody
+        tr(class='table-row')
+            td В процессе
+            td 
+                a(href="#" class="project-link") Проект 1
+            td 
+                progress(max='100' value='70' class='progress-bar')/
+            td 3000 руб.
+        tr(class='table-row')
+            td В процессе
+            td 
+                a(href="#" class="project-link") Проект 2
+            td 
+                progress(max='100' value='40' class='progress-bar')/
+            td 1500 руб.
+        tr(class='table-row')
+            td 
+                img(src='../../img/progress/done_icon.svg')/
+            td 
+                a(href="#" class="project-link") Проект 3
+            td 
+                progress(max='100' value='100' class='progress-bar')/
+            td 8000 руб.
+            
