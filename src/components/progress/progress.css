@@ -19,3 +19,31 @@
   background: #131419;
   padding: 50px 0 40px 0;
 }
+
+.more-donuts_btn {
+  display: block;
+  border: 2px solid #2d2d3a;
+  box-sizing: border-box;
+  border-radius: 15px;
+  font-family: "SF Pro Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  width: 118px;
+  height: 50px;
+  background: transparent;
+  color: #2d2d3a;
+  cursor: pointer;
+  margin: 20px auto;
+  transition: 0.7s;
+}
+
+.more-donuts_btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+.more-donuts_btn:active {
+  color: #2d2d3a;
+  border-color: #2d2d3a;
+}

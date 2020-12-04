@@ -19,11 +19,12 @@ td {
 
 .table-row {
   display: grid;
-  grid-template-columns: 200px 200px 1fr 200px;
+  grid-template-columns: 200px 200px 200px 1fr 200px;
   background: #1c1c24;
   border-radius: 15px;
   margin-bottom: 10px;
-  padding: 18px 0 18px 0;
+  align-items: center;
+  padding: 10px 0;
 }
 
 .table-head {
@@ -31,10 +32,32 @@ td {
   padding: 18px 0 0 0;
 }
 
-.project-link {
+.project-link,
+.author-link {
   color: #fff;
 }
 
+.author-img {
+  width: 40px;
+  height: 40px;
+}
+
 .progress-bar {
-  width: 375px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20px 20px;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-indicator {
+  width: 100%;
+}
+
+.full-summ {
+  margin-left: 10px;
 }
