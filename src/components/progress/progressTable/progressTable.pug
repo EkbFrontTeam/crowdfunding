@@ -1,59 +1,61 @@
 table
     thead
         tr(class='table-row table-head')
-            th Статус
-            th Автор
             th Имя проекта
+            th Автор
+            th Статус
             th Прогресс
             th Внесённая сумма
     tbody
         tr(class='table-row')
-            td В процессе
+            td 
+                a(href="#" class="project-link") Проект 1
             td 
                 a(href="#" class="author-link")
                     img(src="../../img/progress/temp_icon/user1.png" alt="Сергей Шнуров" class="author-img")/
             td 
-                a(href="#" class="project-link") Проект 1
+                img(src="../../img/progress/collect_icon.svg" class="collect-icon")/
             td 
                 .progress-bar
                     .progress-labels
                         label(data-progress-counter="0" class="progress-label progress-label-left") 40%
                         label(data-progress-value="0" class="progress-label progress-label-right") 100%
                     progress(max='100' value='40' class='progress-indicator')/
-            td 
+            td(class='summ-element') 
                 img(src="../../img/progress/coin_stack.svg" alt='coins')
-                span(class="full-summ") 3000 руб.
+                div(class="full-summ") 3000 руб.
         tr(class='table-row')
-            td В процессе
+            td 
+                a(href="#" class="project-link") Проект 2
             td 
                 a(href="#" class="author-link")
                     img(src="../../img/progress/temp_icon/user2.png" alt="Павел Дуров" class="author-img")/
             td 
-                a(href="#" class="project-link") Проект 2
+                img(src="../../img/progress/collect_icon.svg" class="collect-icon")/
             td 
                 .progress-bar
                     .progress-labels
                         label(data-progress-counter="0" class="progress-label progress-label-left") 70%
                         label(data-progress-value="0" class="progress-label progress-label-right") 100%
                     progress(max='100' value='70' class='progress-indicator')/
-            td 
+            td(class='summ-element') 
                 img(src="../../img/progress/coin_stack.svg" alt='coins')
-                span(class="full-summ") 1500 руб.
+                div(class="full-summ") 1500 руб.
         tr(class='table-row')
             td 
-                img(src='../../img/progress/done_icon.svg')/
+                a(href="#" class="project-link") Проект 3
             td 
                 a(href="#" class="author-link")
                     img(src="../../img/progress/temp_icon/user3.png" alt="Маргарита Симонян" class="author-img")/
             td 
-                a(href="#" class="project-link") Проект 3
+                img(src='../../img/progress/done_icon.svg')/
             td 
                .progress-bar
                     .progress-labels
                         label(data-progress-counter="0" class="progress-label progress-label-left") 100%
                         label(data-progress-value="0" class="progress-label progress-label-right") 100%
                     progress(max='100' value='100' class='progress-indicator')/
-            td 
+            td(class='summ-element')
                 img(src="../../img/progress/coin_stack.svg" alt='coins')
-                span(class="full-summ") 8000 руб.
+                div(class="full-summ") 8000 руб.
             

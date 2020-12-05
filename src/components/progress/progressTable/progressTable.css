@@ -8,18 +8,20 @@ table {
 th {
   font-size: 14px;
   color: #5f5f6e;
-  min-width: 200px;
   text-align: center;
 }
 
 td {
   font-size: 16px;
   text-align: center;
+  margin: 0 10px 0 10px;
 }
 
 .table-row {
   display: grid;
-  grid-template-columns: 200px 200px 200px 1fr 200px;
+  grid-template-columns:
+    minmax(100px, 200px) minmax(50px, 200px) minmax(50px, 200px)
+    minmax(100px, 1fr) minmax(100px, 200px);
   background: #1c1c24;
   border-radius: 15px;
   margin-bottom: 10px;
@@ -52,6 +54,7 @@ td {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 12px;
 }
 
 .progress-indicator {
@@ -60,4 +63,44 @@ td {
 
 .full-summ {
   margin-left: 10px;
+}
+
+.summ-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collect-icon {
+  width: 20px;
+}
+
+@media (max-width: 547px) {
+  .container th {
+    display: none;
+  }
+  .full-summ {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 470px) {
+  .table-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .table-row td {
+    width: 80%;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+  }
+  .table-row td:last-child {
+    border: none;
+  }
+}
+@media (max-width: 350px) {
+  .main_wrapper {
+    min-width: 350px;
+    width: 100%;
+  }
 }
