@@ -1,5 +1,9 @@
 /* GLOBAL TAGS */
 
+body {
+    font-family: 'Montserrat', sans-serif;
+  }
+
 :root {
     --blue: #4447E2;
     --white: #fff;
@@ -12,5 +16,5 @@
 .flex {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }

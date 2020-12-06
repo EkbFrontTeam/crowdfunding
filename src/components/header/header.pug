@@ -1,8 +1,19 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title ?index page
+    // Fonts
+    link(href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet")
+    // Icons
+    script(src="https://kit.fontawesome.com/6e4d9f615d.js" crossorigin="anonymous")
+    
 header
   a(class="header_logo" href='index.html')
     div(class="header_logo_icon flex")
       img(src="../../img/header/top_logo_icon.png")
-    h1(class="header_logo_title") Pro-Promotion.com
+    h1(class="header_logo_title") Crowdfunding
   ul(class="header_bar")
     li
       a(class="header_bar_link" href="#")
@@ -20,7 +31,7 @@ header
     ul(class="header_profile_bar")
       button(class="profile_bar_btn flex")
         img(src="../../img/header/plus_money_icon.png")
-      img(src="../../img/header/money_icon.png")
+      img(src="../../img/header/money_icon.png" id="profile_bar_icon")
       p(class="profile_bar_indicator") 2023
     a(href="#")
     button(class="header_profile_btn")
@@ -43,6 +54,35 @@ header
             div(class="profile_checkbox_element")
             div(class="profile_checkbox_ellipse" id="profile_checkbox_click")
       li
+        a(class="header_profile_link" href="#" id="profile_link_aside")
+          i(class="fas fa-th-large")
+          p Task list
+      li
+        a(class="header_profile_link" href="#" id="profile_link_aside")
+          i(class="fas fa-globe-africa")
+          p News
+      li
+        a(class="header_profile_link" href="#" id="profile_link_aside")
+          i(class="fas fa-question-circle")
+          p Help
+      li
         a(class="header_profile_link" href="#")
           i(class="fas fa-sign-out-alt")
           p Log out
+  ul(class="header_mobile flex")
+    li
+      a(class="header_mobile_item" href="#")
+        i(class="fas fa-th-large")
+        p Task list
+    li
+      a(class="header_mobile_item" href="#")
+        i(class="fas fa-globe-africa")
+        p News
+    li
+      a(class="header_mobile_item" href="#")
+        i(class="fas fa-question-circle")
+        p FAQ
+    li
+      a(class="header_mobile_item" href="#") 
+        <i class="fas fa-bars"></i>
+        p Menu

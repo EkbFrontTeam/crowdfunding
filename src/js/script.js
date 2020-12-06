@@ -18,7 +18,7 @@ $(document).ready(function () {
             ! container.is(e.target) && container.has(e.target).length === 0
         // и не по его дочерним элементам
         ) {
-        container.fadeOut();
+        container.slideUp();
         }
       });
 
