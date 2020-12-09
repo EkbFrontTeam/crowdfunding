@@ -3,14 +3,14 @@ html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Прогресс
+    title История сборов
 
   body
   include ../components/header/header.pug
   main.main_wrapper
     div.container
       h2.main_title История сборов
-      include ../components/progress/progressTable/progressTable.pug
+      include ../components/crowdHistory/progressTable.pug
       button(class="more-donuts_btn") Показать все
   include ../components/footer/footer.pug
     

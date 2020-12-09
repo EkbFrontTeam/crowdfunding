@@ -4,6 +4,6 @@
 @import "../components/header/header.css";
 @import "../components/footer/footer.css";
 @import "../fonts/sfpro/stylesheet.css";
-@import "../components/progress/progress.css";
+@import "../components/crowdHistory/progress.css";
 
 @import "./pages/index.css";
