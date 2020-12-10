@@ -20,7 +20,7 @@ td {
 .table-row {
   display: grid;
   grid-template-columns:
-    minmax(100px, 200px) minmax(50px, 200px) minmax(50px, 200px)
+    minmax(100px, 200px) minmax(60px, 200px) minmax(50px, 200px)
     minmax(100px, 1fr) minmax(100px, 200px);
   background: #1c1c24;
   border-radius: 15px;
@@ -39,9 +39,8 @@ td {
   color: #fff;
 }
 
-.author-img {
+.table-cell-author-img {
   width: 40px;
-  height: 40px;
 }
 
 .progress-bar {
@@ -75,10 +74,30 @@ td {
   width: 20px;
 }
 
-@media (max-width: 547px) {
-  .container th {
-    display: none;
+.table-cell-author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 950px) {
+  .table-cell-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  .table-cell-author-name {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .table-cell-author-img {
+    width: 25px;
+  }
+}
+
+@media (max-width: 547px) {
   .full-summ {
     margin-left: 5px;
     font-size: 12px;
@@ -96,6 +115,22 @@ td {
   }
   .table-row td:last-child {
     border: none;
+  }
+  .container th {
+    display: none;
+  }
+  .table-cell-author {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .table-cell-author-name {
+    font-size: 12px;
+    margin: 0;
+  }
+  .table-cell-author-img {
+    width: 40px;
   }
 }
 @media (max-width: 350px) {
