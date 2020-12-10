@@ -1,0 +1,83 @@
+.card {
+  max-width: 290px;
+  width: 100%;
+  background: #1c1c24;
+  border: 20px solid #1c1c24;
+  border-radius: 15px;
+  margin: 0 20px 20px 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.person {
+  margin-top: 5px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ava {
+  position: relative;
+}
+
+.circle {
+  background: #1c1c24;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  top: 35px;
+  right: 3px;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart img{
+  width: 10px;
+  height: 11px;
+  margin-top: 4px;
+}
+
+.text {
+  margin: 5px 56px 0px 10px;
+}
+
+h2 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+h3 {
+  color: #5f5f6e;
+  font-size: 16px;
+}
+
+.menu:after {
+  content: "\2807";
+  font-size: 1em;
+  color: #8e8e96;
+  margin-bottom: 22px;
+
+  display: flex;
+}
+
+.show {
+  margin: 20px 0 20px 0;
+}
+
+button {
+  background: #1c1c24;
+  color: white;
+  height: 50px;
+  border-radius: 15px;
+  border: #4447e2 solid;
+}
+
+button:hover {
+  background: #4447e2;
+}
