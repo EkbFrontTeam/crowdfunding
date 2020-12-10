@@ -47,7 +47,7 @@ header
           i(class="fas fa-th-large")
           p Task history
       li
-        a(class="header_profile_link" href="#")
+        div(class="header_profile_link")
           i(class="fas fa-sun")
           p Dark mode 
           div(class="header_profile_checkbox")
@@ -83,6 +83,31 @@ header
         i(class="fas fa-question-circle")
         p FAQ
     li
-      a(class="header_mobile_item" href="#") 
+      a(class="header_mobile_item" href="#" id="mobile_item_menu") 
         <i class="fas fa-bars"></i>
         p Menu
+// Mobile menu sections
+div(class="header_mobile_section") 
+  ul(class="mobile_section_list")
+    li
+      h2(class="mobile_section_item") Menu
+    li
+      a(class="mobile_section_item" href="#")
+        i(class="fas fa-user")
+        p My profile
+    li
+      a(class="mobile_section_item" href="#")
+        i(class="fas fa-th-large")
+        p Task history
+    li
+      div(class="mobile_section_item")
+        i(class="fas fa-sun")
+        p Dark mode 
+        div(class="mobile_section_checkbox")
+          div(class="section_checkbox_element")
+          div(class="section_checkbox_ellipse" id="section_checkbox_click")
+    li
+      a(class="mobile_section_item" href="#")
+        i(class="fas fa-sign-out-alt")
+        p Log out
+  p(class="mobile_section_police") © 2020 - All Rights Lecensed
