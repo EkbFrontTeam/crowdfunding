@@ -4,7 +4,7 @@ header {
   left: 0;
   right: 0;
   padding: 12px 20px;
-  border-bottom: 2px solid var(--light_grey);
+  border-bottom: 2px solid var(--light_gray);
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
@@ -60,7 +60,7 @@ header {
   display: flex;
   align-items: center;
   padding: 5px 30px 5px 5px;
-  background: var(--light_grey);
+  background: var(--light_gray);
   border-radius: 15px;
   margin-right: 10px;
 }
@@ -109,7 +109,7 @@ header {
   right: 20px;
   z-index: 1000;
   border-radius: 15px;
-  border: 2px solid var(--light_grey);
+  border: 2px solid var(--light_gray);
 }
 
 #profile_link_aside {
@@ -131,7 +131,7 @@ header {
 
 .header_profile_menu li:nth-child(n+2):nth-child(-n+3) 
 .header_profile_link {
-  border-bottom: 1px solid var(--light_grey);
+  border-bottom: 1px solid var(--light_gray);
 }
 
 .header_profile_menu li:hover:nth-child(-n+2) 
@@ -153,7 +153,7 @@ header {
   display: flex;
   width: 44px;
   height: 24px;
-  background: var(--light_grey);
+  background: var(--light_gray);
   margin-left: auto;
   border-radius: 15px;
   padding: 3px;
@@ -183,13 +183,13 @@ header {
   display: none;
   position: fixed;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 35px;
   bottom: 0;
   left: 0;
   right: 0;
   height: 50px;
   background: var(--gray);
-  border-top: 2px solid var(--light_grey);
+  border-top: 2px solid var(--light_gray);
 }
 
 .header_mobile_item {
@@ -198,7 +198,7 @@ header {
   color: var(--asphalt_color);
 }
 
-.header_mobile_item:focus {
+.header_mobile_item:hover, :focus {
   color: var(--white);
 }
 
