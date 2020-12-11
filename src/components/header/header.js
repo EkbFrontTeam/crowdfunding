@@ -34,10 +34,13 @@ $(document).ready(function () {
         });
     }) 
 
-    /* Переходы между разделами мобильного меню */
+    /* Переход в радел Menu в мобильном меню */
     $('#mobile_item_menu').on('click', function(){
         $(this).toggleClass('mobile_item_click');
         $('.header_mobile_section').slideToggle();
+        $('html, body').toggleClass('not_scroll');
     })
+        
+    
 
 }); // Конец ready
