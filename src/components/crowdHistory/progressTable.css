@@ -130,7 +130,7 @@
     width: 40px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 320px) {
   .main_wrapper {
     min-width: 320px;
     width: 100%;

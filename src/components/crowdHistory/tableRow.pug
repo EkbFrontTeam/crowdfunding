@@ -11,9 +11,9 @@ each tag in [{projectName: 'Проект 1', authorImg: '../../img/progress/temp
         td(class="table-cell-bar") 
             .progress-bar
                 .progress-labels
-                    label(data-progress-counter="0" class="progress-label progress-label-left")=tag.progressValue
+                    label(data-progress-counter="0" class="progress-label progress-label-left")=tag.progressValue+'%'
                     label(data-progress-value="100" class="progress-label progress-label-right") 100%
                 progress(max='100' value=tag.progressValue class='progress-indicator')
         td(class='table-cell-sum summ-element') 
             img(src="../../img/progress/coin_stack.svg" alt='coins')
-            div(class="full-summ")=tag.takeSumm
+            div(class="full-summ")=tag.takeSumm+' руб.'
