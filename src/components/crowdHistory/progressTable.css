@@ -1,17 +1,15 @@
-@import "../crowdHistory/progress.css";
-
-table {
+.progress-table {
   width: 100%;
   margin: 20px 0 0 0;
 }
 
-th {
+.progress-table th {
   font-size: 14px;
   color: #5f5f6e;
   text-align: center;
 }
 
-td {
+.progress-table td {
   font-size: 16px;
   text-align: center;
   margin: 0 10px 0 10px;
@@ -83,10 +81,8 @@ td {
 
 @media (max-width: 950px) {
   .table-cell-author {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
   .table-cell-author-name {
     font-size: 12px;
@@ -97,13 +93,16 @@ td {
   }
 }
 
-@media (max-width: 547px) {
+@media (max-width: 557px) {
   .full-summ {
     margin-left: 5px;
     font-size: 12px;
   }
 }
 @media (max-width: 470px) {
+  .container .main_title {
+    text-align: center;
+  }
   .table-row {
     display: flex;
     flex-direction: column;
@@ -120,10 +119,8 @@ td {
     display: none;
   }
   .table-cell-author {
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
   }
   .table-cell-author-name {
     font-size: 12px;
@@ -135,7 +132,7 @@ td {
 }
 @media (max-width: 350px) {
   .main_wrapper {
-    min-width: 350px;
+    min-width: 320px;
     width: 100%;
   }
 }

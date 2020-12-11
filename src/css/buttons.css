@@ -1,13 +1,9 @@
-@import "../crowdHistory/progressTable.css";
-
-.more-donuts_btn {
+/*Кнопка: "Показать всё"*/
+.show-more_btn {
   display: block;
-  border: 2px solid #2d2d3a;
   box-sizing: border-box;
+  border: 2px solid #2d2d3a;
   border-radius: 15px;
-  font-family: "SF Pro Display", sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   width: 118px;
@@ -19,11 +15,11 @@
   transition: 0.7s;
 }
 
-.more-donuts_btn:hover {
+.show-more_btn:hover {
   color: #fff;
   border-color: #fff;
 }
-.more-donuts_btn:active {
+.show-more_btn:active {
   color: #2d2d3a;
   border-color: #2d2d3a;
 }
