@@ -1,3 +1,4 @@
+include tableRow.pug
 table(class="progress-table")
     thead
         tr(class='table-row table-head')
@@ -7,4 +8,6 @@ table(class="progress-table")
             th Прогресс
             th Внесено
     tbody
-        include tableRow.pug
+    each tag in [{projectName: 'Проект 1', authorImg: '../../img/progress/temp_icon/user1.png', authorName: 'Сергей Шнуров', statusImg: '../../img/progress/collect_icon.svg', progressValue: '40', takeSum: '3000'}, {projectName: 'Проект 2', authorImg: '../../img/progress/temp_icon/user2.png', authorName: 'Иван Дуров', statusImg: '../../img/progress/collect_icon.svg', progressValue: '80', takeSum: '5000'}, {projectName: 'Проект 3', authorImg: '../../img/progress/temp_icon/user3.png', authorName: 'Ольга Северова', statusImg: '../../img/progress/done_icon.svg', progressValue: '100', takeSum: '10000'}]
+        +progressTableRow(tag)
+        

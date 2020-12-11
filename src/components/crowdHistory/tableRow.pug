@@ -1,4 +1,4 @@
-each tag in [{projectName: 'Проект 1', authorImg: '../../img/progress/temp_icon/user1.png', authorName: 'Сергей Шнуров', statusImg: '../../img/progress/collect_icon.svg', progressValue: '40', takeSumm: '3000'}, {projectName: 'Проект 2', authorImg: '../../img/progress/temp_icon/user2.png', authorName: 'Иван Дуров', statusImg: '../../img/progress/collect_icon.svg', progressValue: '80', takeSumm: '5000'}, {projectName: 'Проект 3', authorImg: '../../img/progress/temp_icon/user3.png', authorName: 'Ольга Северова', statusImg: '../../img/progress/done_icon.svg', progressValue: '100', takeSumm: '10000'}]
+mixin progressTableRow(tag)
     tr(class='table-row')
         td(class="table-cell-name")
             a(href="#" class="project-link")=tag.projectName
@@ -14,6 +14,6 @@ each tag in [{projectName: 'Проект 1', authorImg: '../../img/progress/temp
                     label(data-progress-counter="0" class="progress-label progress-label-left")=tag.progressValue+'%'
                     label(data-progress-value="100" class="progress-label progress-label-right") 100%
                 progress(max='100' value=tag.progressValue class='progress-indicator')
-        td(class='table-cell-sum summ-element') 
+        td(class='table-cell-sum sum-element') 
             img(src="../../img/progress/coin_stack.svg" alt='coins')
-            div(class="full-summ")=tag.takeSumm+' руб.'
+            div(class="full-sum")=tag.takeSum+' руб.'
