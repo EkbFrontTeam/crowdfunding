@@ -1,0 +1,25 @@
+/*Кнопка: "Показать всё"*/
+.show-more_btn {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid #2d2d3a;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 118px;
+  height: 50px;
+  background: transparent;
+  color: #2d2d3a;
+  cursor: pointer;
+  margin: 20px auto;
+  transition: 0.7s;
+}
+
+.show-more_btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+.show-more_btn:active {
+  color: #2d2d3a;
+  border-color: #2d2d3a;
+}
