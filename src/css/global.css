@@ -3,6 +3,7 @@
 body {
   font-family: "SF Pro Display", sans-serif;
   font-style: normal;
+  min-width: 320px;
 }
 
 .container {
@@ -13,7 +14,7 @@ body {
 }
 
 .main_title {
-  font: 500 normal 26px sans-serif;
+  font: 26px "SF Pro Display", sans-serif;
   line-height: 30px;
 }
 

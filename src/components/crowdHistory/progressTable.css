@@ -1,6 +1,6 @@
 .progress-table {
   width: 100%;
-  margin: 20px 0 0 0;
+  margin-top: 20px;
 }
 
 .progress-table th {
@@ -12,7 +12,7 @@
 .progress-table td {
   font-size: 16px;
   text-align: center;
-  margin: 0 10px 0 10px;
+  margin: 0 10px;
 }
 
 .table-row {
@@ -29,7 +29,7 @@
 
 .table-head {
   background-color: transparent;
-  padding: 18px 0 0 0;
+  padding-top: 18px;
 }
 
 .project-link,
@@ -128,11 +128,5 @@
   }
   .table-cell-author-img {
     width: 40px;
-  }
-}
-@media (max-width: 320px) {
-  .main_wrapper {
-    min-width: 320px;
-    width: 100%;
   }
 }
