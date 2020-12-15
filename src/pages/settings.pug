@@ -3,11 +3,21 @@ html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title page
+    title Мой профиль
 
   body
     include ../components/header/header.pug
-    main settings
+    main.main_wrapper
+      div.container
+        h2.main_title Мой профиль
+        .settings_wrapper
+          .user-media_wrapper
+            include ../components/settings/userPhoto.pug
+            include ../components/settings/socialConnect.pug
+          .user-data_wrapper
+            include ../components/settings/userData.pug
+          .user-stats_wrapper
+            include ../components/settings/userStats.pug
     include ../components/footer/footer.pug
 
     
