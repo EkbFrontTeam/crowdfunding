@@ -29,12 +29,12 @@ header
         p Помощь
   div(class="header_profile")
     ul(class="header_profile_bar")
-      button(class="profile_bar_btn flex")
+      button(class="profile_bar_btn flex pointer")
         img(src="../../img/header/plus_money_icon.png")
       img(src="../../img/header/money_icon.png" id="profile_bar_icon")
       p(class="profile_bar_indicator") 2023
     a(href="#")
-    button(class="header_profile_btn")
+    button(class="header_profile_btn pointer")
       img(src="../../img/header/avatar_icon.png")
       i(class="fas fa-chevron-down")
     ul(class="header_profile_menu")
@@ -50,7 +50,7 @@ header
         div(class="header_profile_link")
           i(class="fas fa-sun")
           p Тёмный режим
-          div(class="header_profile_checkbox")
+          div(class="header_profile_checkbox pointer")
             div(class="profile_checkbox_element")
             div(class="profile_checkbox_ellipse" id="profile_checkbox_click")
       li
@@ -71,19 +71,19 @@ header
           p Выйти
   ul(class="header_mobile flex")
     li
-      a(class="header_mobile_item")
+      a(class="header_mobile_item pointer")
         i(class="fas fa-th-large")
         p Проекты
     li
-      a(class="header_mobile_item")
+      a(class="header_mobile_item pointer")
         i(class="fas fa-globe-africa")
         p Новости
     li
-      a(class="header_mobile_item")
+      a(class="header_mobile_item pointer")
         i(class="fas fa-question-circle")
         p Помощь
     li
-      a(class="header_mobile_item" id="mobile_item_menu") 
+      a(class="header_mobile_item pointer" id="mobile_item_menu") 
         <i class="fas fa-bars"></i>
         p Меню
 
@@ -104,7 +104,7 @@ div(class="header_mobile_section")
       div(class="mobile_section_item")
         i(class="fas fa-sun")
         p Тёмный режим 
-        div(class="mobile_section_checkbox")
+        div(class="mobile_section_checkbox pointer")
           div(class="section_checkbox_element")
           div(class="section_checkbox_ellipse" id="section_checkbox_click")
     li
@@ -112,3 +112,6 @@ div(class="header_mobile_section")
         i(class="fas fa-sign-out-alt")
         p Выйти
   p(class="mobile_section_police") © 2020 - All Rights Lecensed
+
+//jQuery
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")

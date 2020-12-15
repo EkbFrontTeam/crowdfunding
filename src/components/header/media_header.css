@@ -5,7 +5,6 @@
     }
 
     #profile_link_aside {
-        display: block;
         width: 100%;
         display: flex;
         align-items: center;
@@ -52,8 +51,5 @@
     .profile_bar_indicator {
         font-size: 12px;
     }
-
-    .header_mobile {
-        display: flex;
-    }
 }
+
