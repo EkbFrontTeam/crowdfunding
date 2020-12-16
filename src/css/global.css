@@ -1,1 +1,25 @@
 /* GLOBAL TAGS */
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+  font-style: normal;
+  min-width: 320px;
+}
+
+.container {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.main_title {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.main_wrapper {
+  background: #131419;
+  padding: 50px 40px 40px 40px;
+  width: 100%;
+}

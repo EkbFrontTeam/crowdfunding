@@ -3,5 +3,8 @@
 
 @import "../components/header/header.css";
 @import "../components/footer/footer.css";
+@import "../components/crowdHistory/progressTable.css";
+@import "../fonts/sfpro/stylesheet.css";
+@import "./buttons.css";
 
 @import "./pages/index.css";

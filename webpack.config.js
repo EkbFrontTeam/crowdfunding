@@ -25,6 +25,10 @@ module.exports = {
       template: "./src/pages/settings.pug",
       filename: "settings.html",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/pages/progress.pug",
+      filename: "progress.html",
+    }),
     new HtmlWebpackPugPlugin(),
 
     new MiniCssExtractPlugin({ filename: "style.css" }), // Generating CSS
