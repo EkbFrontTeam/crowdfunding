@@ -83,8 +83,7 @@
   align-items: center;
   margin-bottom: 20px;
 }
-.stats_item_img {
-}
+
 .stats_item-descr {
   margin-left: 20px;
 }
@@ -154,7 +153,7 @@
     grid-template-columns: 130px 1fr;
     grid-template-rows: 190px;
   }
-  .upload_btn{
+  .upload_btn {
     margin-top: 10px;
   }
 }
