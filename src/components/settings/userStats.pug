@@ -1,22 +1,5 @@
+include ./userStatsItem.pug
 h4.settings-subtitle Моя статистика
     .stats_wrapper
-      .stats_item
-         img(src="../../img/settings/stat-likes_icon.svg", alt="likes" class="stats_item_img")
-         .stats_item-descr
-            .stats_item-label 2562
-            p.stats_item-text Мне понравилось
-      .stats_item
-         img(src="../../img/settings/stat-ref_icon.svg", alt="referenced" class="stats_item_img")
-         .stats_item-descr
-            .stats_item-label 15
-            p.stats_item-text Я пригласил
-      .stats_item
-         img(src="../../img/settings/stat-days_icon.svg", alt="days alive" class="stats_item_img")
-         .stats_item-descr
-            .stats_item-label 329
-            p.stats_item-text Дней с регистрации
-      .stats_item
-         img(src="../../img/settings/stat-spent_icon.svg", alt="spent" class="stats_item_img")
-         .stats_item-descr
-            .stats_item-label 1456.23
-            p.stats_item-tex Потратил денег
+      each statsValues in [{statsImg: "../../img/settings/stat-likes_icon.svg", altImg: 'likes', statsValue: 2562, statsDescr: 'Мне понравилось'}, {statsImg: "../../img/settings/stat-ref_icon.svg", altImg: 'referenced', statsValue: 15, statsDescr: 'Я пригласил'}, {statsImg: "../../img/settings/stat-days_icon.svg", altImg: 'days ago', statsValue: 329, statsDescr: 'Дней с регистрации'}, {statsImg: "../../img/settings/stat-spent_icon.svg", altImg: 'spent', statsValue: 1456.23, statsDescr: 'Потратил денег'}]
+        +statsItem(statsValues)
