@@ -1,3 +1,6 @@
+button {
+  border: none;
+}
 /*Кнопка: "Показать всё"*/
 .show-more_btn {
   display: block;
@@ -27,7 +30,6 @@
 /*Кнопка: "Upload"*/
 .upload_btn {
   display: block;
-  box-sizing: border-box;
   border: 2px solid #2d2d3a;
   border-radius: 15px;
   font-size: 18px;
@@ -55,9 +57,8 @@
   display: block;
   width: 20px;
   height: 20px;
-  border: none;
-  box-sizing: border-box;
-  background: transparent url(../img/settings/add_icon.svg) center center/contain no-repeat;
+  background: transparent url(../img/settings/add_icon.svg) center
+    center/contain no-repeat;
   transition: 0.7s;
   cursor: pointer;
 }

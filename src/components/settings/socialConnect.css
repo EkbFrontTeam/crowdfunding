@@ -1,0 +1,26 @@
+.user-media_social {
+  margin-top: 50px;
+}
+
+.social-connect_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #1c1c24;
+  border-radius: 15px;
+}
+
+.social-connect_item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.social-connect_descr {
+  display: flex;
+  align-items: center;
+  width: 45%;
+}
+.social-connect_txt {
+  margin-left: 10px;
+  color: #fff;
+}

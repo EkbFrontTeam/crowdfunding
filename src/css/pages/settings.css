@@ -1,3 +1,8 @@
+@import url(../../components/settings/socialConnect.css);
+@import url(../../components/settings/userStats.css);
+@import url(../../components/settings/userPhoto.css);
+@import url(../../components/settings/userData.css);
+
 .settings_wrapper {
   padding: 35px 0;
   display: grid;
@@ -11,92 +16,11 @@
   margin-bottom: 10px;
 }
 
-.user-media_photo {
-  background: #1c1c24;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-.user-media_social {
-  margin-top: 50px;
-}
-
+.pass-manage_wrp,
+.pass-manage_item,
+.stats_wrapper,
 .social-connect_wrp {
   margin-top: 10px;
-}
-
-.social-connect_item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  background: #1c1c24;
-  border-radius: 15px;
-  margin-top: 20px;
-}
-
-.social-connect_item:first-child {
-  margin-top: 0;
-}
-.social-connect_descr {
-  display: flex;
-  align-items: center;
-  width: 45%;
-}
-.social-connect_txt {
-  margin-left: 10px;
-  color: #fff;
-}
-
-.settings-textarea {
-  background: #2d2d3a;
-  border-radius: 15px;
-  width: 100%;
-  border: none;
-  padding: 15px;
-  font-size: 16px;
-  color: #fff;
-}
-
-.user-data_form {
-  display: grid;
-  grid-template-rows: 120px 150px 1fr;
-}
-
-.pass-manage_wrp,
-.pass-manage_item {
-  margin-top: 10px;
-}
-.pass-manage_item {
-  margin-bottom: 20px;
-}
-
-.stats_wrapper {
-  margin-top: 10px;
-}
-.stats_item {
-  width: 100%;
-  background: #1c1c24;
-  border-radius: 15px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.stats_item-descr {
-  margin-left: 20px;
-}
-.stats_item-label {
-  font-size: 24px;
-  line-height: 20px;
-  color: #fff;
-  margin-bottom: 5px;
-}
-.stats_item-text {
-  font-size: 16px;
-  line-height: 20px;
-  color: #5f5f6e;
 }
 
 @media (max-width: 1300px) {

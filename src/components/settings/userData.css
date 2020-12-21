@@ -1,0 +1,8 @@
+.user-data_form {
+  display: grid;
+  grid-template-rows: 120px 150px 1fr;
+}
+
+.pass-manage_item {
+  margin-bottom: 20px;
+}

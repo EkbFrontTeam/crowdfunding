@@ -1,20 +1,20 @@
 form(action="#", method="post" class="user-data_form")
     .telegram-manage
         h4.settings-subtitle Ссылка на Telegram
-        input(type="text", name="telegram-link" class="settings-textarea")
+        input(type="text", name="telegram-link" class="settings-input")
     .email-manage
         h4.settings-subtitle Электронная почта
-        input(type="email", name="email-link" class="settings-textarea")
+        input(type="email", name="email-link" class="settings-input")
     .password-manage
         h4.settings-subtitle Изменение пароля
             .pass-manage_wrp
                 .pass-manage_item
                     h4.settings-subtitle Старый пароль
-                    input(type="password", name="primary-pass" class="settings-textarea")
+                    input(type="password", name="primary-pass" class="settings-input")
                 .pass-manage_item
                     h4.settings-subtitle Новый пароль
-                    input(type="password", name="new-pass" class="settings-textarea")
+                    input(type="password", name="new-pass" class="settings-input")
                 .pass-manage_item
                     h4.settings-subtitle Подтвердите новый пароль
-                    input(type="password", name="confirm-pass" class="settings-textarea")
+                    input(type="password", name="confirm-pass" class="settings-input")
 input(type="submit", value="Сохранить" class="upload_btn submit_btn")
