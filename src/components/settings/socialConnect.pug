@@ -1,18 +1,6 @@
+include ./socialConnectItem.pug
 .user-media_social
     h4.settings-subtitle Социальные сети
       .social-connect_wrp
-        .social-connect_item
-          .social-connect_descr
-            img(src="../../img/settings/fb_icon.svg", alt="facebook" class="social-icon_img")
-            p(class="social-connect_txt") Facebook
-          button(class="add_btn")
-        .social-connect_item
-          .social-connect_descr
-            img(src="../../img/settings/tw_icon.svg", alt="twitter" class="social-icon_img")
-            p(class="social-connect_txt") Twitter
-          button(class="add_btn")
-        .social-connect_item
-          .social-connect_descr
-            img(src="../../img/settings/vk_icon.svg", alt="vk" class="social-icon_img")
-            p(class="social-connect_txt") ВКонтакте
-          button(class="add_btn")
+        each socialValues in [{socialImg: "../../img/settings/fb_icon.svg", altImg: 'Facebook', socialDescr: "Facebook"}, {socialImg: "../../img/settings/tw_icon.svg", altImg: 'Twitter', socialDescr: "Twitter"}, {socialImg: "../../img/settings/vk_icon.svg", altImg: 'ВКонтакте', socialDescr: "ВКонтакте"}]
+          +socialItem(socialValues)
