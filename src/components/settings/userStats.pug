@@ -1,5 +1,0 @@
-include ./userStatsItem.pug
-h4.settings-subtitle Моя статистика
-    .stats_wrapper
-      each statsValues in [{statsImg: "../../img/settings/stat-likes_icon.svg", altImg: 'likes', statsValue: 2562, statsDescr: 'Мне понравилось'}, {statsImg: "../../img/settings/stat-ref_icon.svg", altImg: 'referenced', statsValue: 15, statsDescr: 'Я пригласил'}, {statsImg: "../../img/settings/stat-days_icon.svg", altImg: 'days ago', statsValue: 329, statsDescr: 'Дней с регистрации'}, {statsImg: "../../img/settings/stat-spent_icon.svg", altImg: 'spent', statsValue: 1456.23, statsDescr: 'Потратил денег'}]
-        +statsItem(statsValues)

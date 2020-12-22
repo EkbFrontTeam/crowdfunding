@@ -1,7 +1,6 @@
-@import url(../../components/settings/socialConnect.css);
-@import url(../../components/settings/userStats.css);
-@import url(../../components/settings/userPhoto.css);
-@import url(../../components/settings/userData.css);
+@import url(../../components/settings/userStats/userStats.css);
+@import url(../../components/settings/userData/userData.css);
+@import url(../../components/settings/socialConnect/socialConnect.css);
 
 .user-media_wrapper {
   grid-area: userMedia;
@@ -11,6 +10,12 @@
 }
 .user-stats_wrapper {
   grid-area: userStats;
+}
+
+.user-media_photo {
+  background: #1c1c24;
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .settings_wrapper {
@@ -47,6 +52,15 @@
     grid-template-areas:
       "userMedia userForm"
       "userStats userStats";
+  }
+
+  .stats_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .stats_item {
+    margin: 0;
   }
 }
 
@@ -87,6 +101,9 @@
     font-size: 12px;
     height: 40px;
     margin-top: 15px;
+  }
+  .stats_wrapper {
+    grid-template-columns: 1fr;
   }
 }
 

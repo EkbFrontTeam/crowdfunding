@@ -1,6 +1,0 @@
-include ./socialConnectItem.pug
-.user-media_social
-    h4.settings-subtitle Социальные сети
-      .social-connect_wrp
-        each socialValues in [{socialImg: "../../img/settings/fb_icon.svg", altImg: 'Facebook', socialDescr: "Facebook"}, {socialImg: "../../img/settings/tw_icon.svg", altImg: 'Twitter', socialDescr: "Twitter"}, {socialImg: "../../img/settings/vk_icon.svg", altImg: 'ВКонтакте', socialDescr: "ВКонтакте"}]
-          +socialItem(socialValues)
