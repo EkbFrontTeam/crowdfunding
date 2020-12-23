@@ -3,12 +3,11 @@ button,
   display: block;
   background: transparent;
   color: #fff;
-  cursor: pointer;
   transition: 0.7s;
 }
 
 /*Кнопка: "Показать всё"*/
-.show-more_btn {
+.show_more_btn {
   border: 2px solid #2d2d3a;
   border-radius: 15px;
   font-size: 16px;
@@ -19,11 +18,11 @@ button,
   color: #2d2d3a;
   margin: 20px auto;
 }
-.show-more_btn:hover {
+.show_more_btn:hover {
   color: #fff;
   border-color: #fff;
 }
-.show-more_btn:active {
+.show_more_btn:active {
   color: #2d2d3a;
   border-color: #2d2d3a;
 }

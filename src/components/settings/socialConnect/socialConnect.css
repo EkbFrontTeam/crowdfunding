@@ -1,8 +1,8 @@
-.user-media_social {
+.user_media_social {
   margin-top: 50px;
 }
 
-.social-connect_item {
+.social_connect_item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,16 +11,16 @@
   border-radius: 15px;
 }
 
-.social-connect_item:not(:first-child) {
+.social_connect_item:not(:first-child) {
   margin-top: 20px;
 }
 
-.social-connect_descr {
+.social_connect_descr {
   display: flex;
   align-items: center;
   width: 45%;
 }
-.social-connect_txt {
+.social_connect_txt {
   margin-left: 10px;
   color: #fff;
 }
