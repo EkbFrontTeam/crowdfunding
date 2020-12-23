@@ -16,7 +16,7 @@ input {
   color: #fff;
 }
 input:focus {
-  border: 1px solid #6740c2;
+  border-color: #6740c2;
 }
 
 .container {
