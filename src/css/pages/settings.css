@@ -34,13 +34,12 @@
 }
 
 .settings_subtitle {
+  display: block;
   font-size: 14px;
   color: #5f5f6e;
   margin-bottom: 10px;
 }
 
-.pass_manage_wrp,
-.pass_manage_item,
 .stats_wrapper,
 .social_connect_wrp {
   margin-top: 10px;
