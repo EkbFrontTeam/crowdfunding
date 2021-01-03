@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     /* Переход в радел Menu в мобильном меню */
     $('#mobile_item_menu').on('click', function(){
-        $(this).toggleClass('mobile_item_click');
+        $('#mobile_item_menu, #icon_menu').toggleClass('mobile_item_click');
         $('.header_mobile_section').slideToggle();
         $('html, body').toggleClass('not_scroll');
     })

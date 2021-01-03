@@ -2,7 +2,7 @@
     display: none;
     position: fixed;
     justify-content: space-between;
-    padding: 0 35px;
+    padding: 0 30px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -20,6 +20,11 @@
   .header_mobile_item:hover,
   .mobile_item_click {
     color: var(--white);
+    fill: var(--white);
+  }
+
+  .header_mobile_item:hover .mobile_item_icon {
+    fill: var(--white);
   }
   
   .header_mobile_item p {
@@ -45,7 +50,7 @@
   .mobile_section_item {
     color: var(--white);
     display: flex;
-    align-content: center;
+    align-items: center;
     padding: 30px 0;
   }
   
@@ -59,8 +64,12 @@
   
   .header_mobile_section 
   li:hover:nth-child(n+2):nth-child(-n+3)
-  .mobile_section_item{
+  .mobile_section_item,
+  .header_mobile_section 
+  li:hover:nth-child(n+2):nth-child(-n+3)
+  .mobile_section_item .mobile_section_icon {
     color: var(--blue);
+    fill: var(--blue);
   }
   
   .header_mobile_section 
@@ -96,7 +105,8 @@
     width: 19px;
   }
   
-  .section_checkbox_ellipse {
+  .section_checkbox_ellipse,
+  .section_checkbox_ellipse_click {
     height: 18px;
     width: 18px;
     background: var(--blue);
@@ -104,10 +114,7 @@
   }
   
   .section_checkbox_ellipse_click {
-    height: 18px;
-    width: 18px;
     background: var(--white);
-    border-radius: 50%;
   }
 
   /*max-width: 450px*/

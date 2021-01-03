@@ -45,6 +45,10 @@ header {
   color: var(--white);
 }
 
+.header_bar_link:hover .bar_link_icon {
+  fill: var(--white);
+}
+
 .header_bar_link p {
   margin-left: 10px;
 }
@@ -81,12 +85,12 @@ header {
   color: var(--asphalt_color);
 }
 
-.header_profile_btn i {
+.header_profile_btn svg {
   margin-left: 10px;
 }
 
-.header_profile_btn:hover {
-  color: var(--blue);
+.header_profile_btn:hover .profile_btn_icon {
+  fill: var(--blue);
 }
 
 .header_profile_menu {
@@ -126,8 +130,12 @@ li:nth-child(n+2):nth-child(-n+3)
 
 .header_profile_menu 
 li:hover:nth-child(-n+2) 
-.header_profile_link {
+.header_profile_link,
+.header_profile_menu 
+li:hover:nth-child(-n+2) 
+.header_profile_link .profile_link_icon {
   color: var(--blue);
+  fill: var(--blue);
 }
 
 .header_profile_menu 
@@ -138,8 +146,13 @@ li:nth-child(3)
 
 .header_profile_menu 
 li:hover:last-child 
-.header_profile_link {
+.header_profile_link,
+.header_profile_menu 
+li:hover:last-child 
+.header_profile_link 
+.profile_link_icon {
   color: var(--red);
+  fill: var(--red);
 }
 
 .header_profile_checkbox {

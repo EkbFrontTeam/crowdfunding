@@ -16,6 +16,11 @@
     #profile_link_aside:hover {
         color: var(--blue);
     }  
+
+    #profile_link_aside:hover 
+    .profile_link_icon {
+        fill: var(--blue);
+    }
 }
 
 /*max-width: 450px*/
