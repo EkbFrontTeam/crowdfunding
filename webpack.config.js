@@ -26,6 +26,10 @@ module.exports = {
       filename: "settings.html",
     }),
     new HtmlWebpackPlugin({
+      template: "./src/pages/list.pug",
+      filename: "list.html",
+    }),
+    new HtmlWebpackPlugin({
       template: "./src/pages/progress.pug",
       filename: "progress.html",
     }),

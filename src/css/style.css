@@ -6,5 +6,8 @@
 @import "../components/crowdHistory/progressTable.css";
 @import "../fonts/sfpro/stylesheet.css";
 @import "./buttons.css";
+@import "../components/card/card.css";
+@import "../components/card/skeleton.css";
+@import "./pages/list.css";
 
 @import "./pages/index.css";

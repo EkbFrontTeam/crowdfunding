@@ -1,6 +1,5 @@
 .card {
-  max-width: 290px;
-  width: 100%;
+  width: calc(25% - 20px);
   background: #1c1c24;
   border: 20px solid #1c1c24;
   border-radius: 15px;
@@ -10,25 +9,23 @@
   flex-direction: column;
 }
 
-.person {
-  margin-top: 5px;
-
+.person_card {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
-.ava {
+.ava_card {
   position: relative;
 }
 
-.circle {
+.circle_card {
   background: #1c1c24;
   border-radius: 50%;
   width: 16px;
   height: 16px;
   top: 35px;
   right: 3px;
+
   position: absolute;
 
   display: flex;
@@ -36,48 +33,69 @@
   align-items: center;
 }
 
-.heart img{
-  width: 10px;
+.circle_card img {
   height: 11px;
-  margin-top: 4px;
 }
 
-.text {
-  margin: 5px 56px 0px 10px;
-}
-
-h2 {
-  color: white;
-  font-size: 16px;
-  margin-bottom: 6px;
-}
-
-h3 {
-  color: #5f5f6e;
-  font-size: 16px;
-}
-
-.menu:after {
-  content: "\2807";
-  font-size: 1em;
-  color: #8e8e96;
-  margin-bottom: 22px;
+.text_card {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 0 10px;
 
   display: flex;
+  flex-direction: column;
 }
 
-.show {
-  margin: 20px 0 20px 0;
+.h2_card {
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-button {
+.h3_card {
+  color: #5f5f6e;
+  font-size: 14px;
+}
+
+.menu_card img {
+  width: 20px;
+  margin-bottom: 22px;
+}
+
+.show_card img {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.button_card {
   background: #1c1c24;
   color: white;
   height: 50px;
   border-radius: 15px;
-  border: #4447e2 solid;
+  border: 2px solid #4447e2;
 }
 
-button:hover {
+.button_card:hover {
   background: #4447e2;
+}
+
+/* MEDIA */
+
+@media only screen and (max-width: 950px) {
+  .card {
+    width: calc(33% - 20px);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .card {
+    width: calc(100% - 20px);
+  }
 }
