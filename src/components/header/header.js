@@ -40,7 +40,4 @@ $(document).ready(function () {
         $('.header_mobile_section').slideToggle();
         $('html, body').toggleClass('not_scroll');
     })
-        
-    
-
 }); // Конец ready

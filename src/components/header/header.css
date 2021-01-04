@@ -122,18 +122,19 @@ header {
   margin-left: 10px;
 }
 
-.header_profile_menu 
-li:nth-child(n+2):nth-child(-n+3) 
-.header_profile_link {
+.profile_menu_item:nth-child(n+2):nth-child(-n+3) 
+.header_profile_link,
+.header_mobile_section 
+li:nth-child(n+3):nth-child(-n+4)
+.mobile_section_item {
   border-bottom: 1px solid var(--light_gray);
 }
 
-.header_profile_menu 
-li:hover:nth-child(-n+2) 
+.profile_menu_item:hover:nth-child(-n+2) 
 .header_profile_link,
-.header_profile_menu 
-li:hover:nth-child(-n+2) 
-.header_profile_link .profile_link_icon {
+.profile_menu_item:hover:nth-child(-n+2) 
+.header_profile_link 
+.profile_link_icon {
   color: var(--blue);
   fill: var(--blue);
 }
@@ -144,11 +145,9 @@ li:nth-child(3)
   cursor: auto;
 }
 
-.header_profile_menu 
-li:hover:last-child 
+.profile_menu_item:hover:last-child 
 .header_profile_link,
-.header_profile_menu 
-li:hover:last-child 
+.profile_menu_item:hover:last-child 
 .header_profile_link 
 .profile_link_icon {
   color: var(--red);
