@@ -1,0 +1,130 @@
+.progress-table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.progress-table th {
+  font-size: 14px;
+  color: #5f5f6e;
+  text-align: center;
+}
+
+.progress-table td {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns:
+    minmax(100px, 200px) minmax(60px, 200px) minmax(50px, 200px)
+    minmax(100px, 1fr) minmax(100px, 200px);
+  background: #1c1c24;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.table-head {
+  background-color: transparent;
+  padding-top: 18px;
+}
+
+.project-link,
+.author-link {
+  color: #fff;
+}
+
+.table-cell-author-img {
+  width: 40px;
+}
+
+.progress-bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20px 20px;
+}
+
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.progress-indicator {
+  width: 100%;
+}
+
+.full-summ {
+  margin-left: 10px;
+}
+
+.sum-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collect-icon {
+  width: 20px;
+}
+
+.table-cell-author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 950px) {
+  .table-cell-author {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .table-cell-author-name {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .table-cell-author-img {
+    width: 25px;
+  }
+  .full-summ {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 470px) {
+  .container .main_title {
+    text-align: center;
+  }
+  .table-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .table-row td {
+    width: 80%;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+  }
+  .table-row td:last-child {
+    border: none;
+  }
+  .container th {
+    display: none;
+  }
+  .table-cell-author {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .table-cell-author-name {
+    font-size: 12px;
+    margin: 0;
+  }
+  .table-cell-author-img {
+    width: 40px;
+  }
+}

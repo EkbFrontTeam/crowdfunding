@@ -1,30 +1,61 @@
 /* GLOBAL TAGS */
 
 body {
-    font-family: "SF Pro Display", sans-serif;
-    min-width: 320px;
-  }
+  font-family: "SF Pro Display", sans-serif;
+  font-style: normal;
+  min-width: 320px;
+}
 
 :root {
-    --blue: #4447E2;
-    --white: #fff;
-    --gray: #1C1C24;
-    --light_gray: #262631;
-    --asphalt_color: #5F5F6E;
-    --red: #E24444;
-    --top_gray: #131419;
+  --blue: #4447E2;
+  --white: #fff;
+  --gray: #1C1C24;
+  --light_gray: #262631;
+  --asphalt_color: #5F5F6E;
+  --red: #E24444;
+  --top_gray: #131419;
 }
 
 .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .not_scroll {
-    overflow: hidden;
+  overflow: hidden;
   }
 
 .pointer {
   cursor: pointer;
+}
+input {
+  background: #2d2d3a;
+  border-radius: 15px;
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 15px;
+  font-size: 16px;
+  color: #fff;
+}
+input:focus {
+  border-color: #6740c2;
+}
+
+.container {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.main_title {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.main_wrapper {
+  background: #131419;
+  padding: 50px 15px;
+  width: 100%;
 }

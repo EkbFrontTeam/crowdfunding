@@ -1,11 +1,15 @@
 @import "reset.css";
 @import "global.css";
 
-@import "./pages/index.css";
 
 @import "../components/header/header.css";
 @import "../components/header/media_header.css";
 @import "../components/header/header_mobile.css";
+
+
+@import "../components/crowdHistory/progressTable.css";
 @import "../fonts/sfpro/stylesheet.css";
+@import "./buttons.css";
 
-
+@import "./pages/index.css";
+@import "./pages/settings.css";
