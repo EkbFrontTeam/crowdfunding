@@ -56,5 +56,8 @@
     .profile_bar_indicator {
         font-size: 12px;
     }
-}
 
+    .header_profile_menu {
+        display: none !important;
+    }
+}
