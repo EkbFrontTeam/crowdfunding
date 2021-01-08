@@ -1,0 +1,6 @@
+mixin statsItem(statsValues)
+   .stats_item
+            img(src=statsValues.statsImg, alt=statsValues.altImg class="stats_item_img")
+            .stats_item_descr
+               .stats_item_label=statsValues.statsValue
+               p.stats_item_text=statsValues.statsDescr

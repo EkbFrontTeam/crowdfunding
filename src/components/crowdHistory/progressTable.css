@@ -91,14 +91,12 @@
   .table-cell-author-img {
     width: 25px;
   }
-}
-
-@media (max-width: 557px) {
   .full-summ {
     margin-left: 5px;
     font-size: 12px;
   }
 }
+
 @media (max-width: 470px) {
   .container .main_title {
     text-align: center;

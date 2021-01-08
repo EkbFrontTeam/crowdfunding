@@ -1,0 +1,118 @@
+@import url(../../components/settings/userStats/userStats.css);
+@import url(../../components/settings/userData/userData.css);
+@import url(../../components/settings/socialConnect/socialConnect.css);
+
+.user_media_wrapper {
+  grid-area: userMedia;
+}
+.user_data_wrapper {
+  grid-area: userForm;
+}
+.user_stats_wrapper {
+  grid-area: userStats;
+}
+
+.user_media_photo {
+  background: #1c1c24;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.user_media_img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.settings_wrapper {
+  padding: 35px 0;
+  display: grid;
+  grid-template-columns: 290px minmax(290px, 1fr) minmax(290px, 1fr);
+  gap: 40px;
+  grid-template-areas: "userMedia userForm userStats";
+}
+
+.settings_subtitle {
+  display: block;
+  font-size: 14px;
+  color: #5f5f6e;
+  margin-bottom: 10px;
+}
+
+.stats_wrapper,
+.social_connect_wrp {
+  margin-top: 10px;
+}
+
+@media (max-width: 1025px) {
+  .settings_wrapper {
+    grid-template-columns: 290px minmax(290px, 1fr);
+    gap: 30px;
+    grid-template-areas:
+      "userMedia userForm"
+      "userStats userStats";
+  }
+  .stats_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .stats_item {
+    margin: 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .settings_wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    grid-template-areas:
+      "userMedia"
+      "userForm"
+      "userStats";
+  }
+  .user_media_wrapper {
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    gap: 10px;
+  }
+  .user_media_social {
+    margin-top: 0;
+  }
+  .social_connect_item {
+    margin-top: 18px !important;
+  }
+  .social_icon_img {
+    width: 30px;
+  }
+  .user_media_photo {
+    padding: 10px;
+  }
+  .user_media_img {
+    height: 130px;
+  }
+  .stats_wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .social_connect_item {
+    font-size: 12px;
+    margin-top: 10px !important;
+  }
+  .social_connect_txt {
+    margin-right: 5px;
+  }
+  .user_media_wrapper {
+    grid-template-columns: 130px 1fr;
+    grid-template-rows: 25vh;
+  }
+  .upload_btn {
+    margin-top: 10px;
+  }
+  .user_media_img {
+    height: 110px;
+  }
+}

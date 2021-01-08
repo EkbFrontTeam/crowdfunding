@@ -1,0 +1,6 @@
+mixin socialItem(socialValues)
+    .social_connect_item
+          .social_connect_descr
+            img(src=socialValues.socialImg, alt=socialValues.altImg class="social_icon_img")
+            p(class="social_connect_txt")=socialValues.socialDescr
+          button(class="add_btn")
