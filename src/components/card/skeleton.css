@@ -7,8 +7,7 @@
 
 .text_skeleton {
   width: 100%;
-  margin-right: 20px;
-  margin-left: 15px;
+  margin: 0 20px 0 15px;
 }
 
 .text1_skeleton {
@@ -38,7 +37,7 @@
 }
 
 .show_skeleton img {
-  width: 85px;
+  width: 100px;
 }
 
 .button_skeleton {

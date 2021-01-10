@@ -9,6 +9,11 @@
   flex-direction: column;
 }
 
+.card:hover {
+  transform: scale(1.08, 1.08);
+  transition-duration: 1s;
+}
+
 .person_card {
   display: flex;
   align-items: center;
@@ -24,7 +29,7 @@
   width: 16px;
   height: 16px;
   top: 35px;
-  right: 3px;
+  right: 5px;
 
   position: absolute;
 
@@ -58,12 +63,12 @@
   font-size: 14px;
 }
 
-.menu_card img {
+.menu_card {
   width: 20px;
   margin-bottom: 22px;
 }
 
-.show_card img {
+.show_card {
   margin: 20px 0;
   width: 100%;
 }
