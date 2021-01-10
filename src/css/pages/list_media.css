@@ -1,0 +1,41 @@
+/* @media only screen and (max-width: 1100px) {
+.block_cards_text{
+   margin-left: 80px;
+}
+
+
+.block_cards{
+   display: flex;
+   justify-content: center ;
+}
+}
+
+@media only screen and (max-width: 1051px) {
+   .block_cards_text{
+      margin-left: 80px;
+   }
+}
+
+@media only screen and (max-width: 842px) {
+   .block_cards_top{
+      padding: 0 20px 20px 0;
+   }
+
+   .block_cards_text{
+      margin-left: 30px;
+   }
+}
+
+@media only screen and (max-width: 710px) { 
+   .top {
+      display: none;
+   }
+
+   .block_cards_text{
+      margin-left: 15px;
+   }
+ 
+   .block_cards_top{
+      padding-right: 15px;
+   }
+} */
