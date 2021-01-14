@@ -1,29 +1,28 @@
-.card {
+.task_card {
   width: calc(25% - 20px);
   background: #1c1c24;
   border: 20px solid #1c1c24;
   border-radius: 15px;
   margin: 0 20px 20px 0;
+  transition-duration: 0.5s;
 
   display: flex;
   flex-direction: column;
 }
 
-.card:hover {
-  transform: scale(1.08, 1.08);
-  transition-duration: 1s;
+.task_card:hover {
+  transform: scale(1.02);
 }
 
-.person_card {
+.project_card {
   display: flex;
   align-items: center;
 }
-
-.ava_card {
+.project_card_ava {
   position: relative;
 }
 
-.circle_card {
+.project_card_circle {
   background: #1c1c24;
   border-radius: 50%;
   width: 16px;
@@ -38,27 +37,24 @@
   align-items: center;
 }
 
-.circle_card img {
+.project_card_circle img {
   height: 11px;
 }
 
-.text_card {
+.project_card_text {
   width: 100%;
   overflow: hidden;
-  margin: 0 0 0 10px;
-
-  display: flex;
-  flex-direction: column;
+  margin-left: 10px;
 }
 
-.h2_card {
+.project_card_text_name {
   margin-bottom: 6px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.h3_card {
+.project_card_text_description {
   color: #5f5f6e;
   font-size: 14px;
 }
@@ -68,7 +64,7 @@
   margin-bottom: 22px;
 }
 
-.show_card {
+.task_card_image {
   margin: 20px 0;
   width: 100%;
 }
@@ -88,19 +84,19 @@
 /* MEDIA */
 
 @media only screen and (max-width: 950px) {
-  .card {
+  .task_card {
     width: calc(33% - 20px);
   }
 }
 
 @media only screen and (max-width: 700px) {
-  .card {
+  .task_card {
     width: calc(50% - 20px);
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .card {
+  .task_card {
     width: calc(100% - 20px);
   }
 }
