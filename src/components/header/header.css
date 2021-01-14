@@ -182,3 +182,69 @@ li:nth-child(3)
   background: var(--white);
   border-radius: 50%;
 }
+
+/*=== Media requests ===*/
+@media only screen and (max-width: 800px) {
+  .header_bar {
+      display: none;
+  }
+
+  #profile_link_aside {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      color: var(--white); 
+      font-size: 15px;
+      padding: 20px 0;
+    }
+
+  #profile_link_aside:hover {
+      color: var(--blue);
+  }  
+
+  #profile_link_aside:hover 
+  .profile_link_icon {
+      fill: var(--blue);
+  }
+}
+
+/*max-width: 450px*/
+@media only screen and (max-width: 450px) {
+  header {
+      padding: 12px 15px;
+  }
+
+  .header_profile_btn {
+      display: none;
+  }
+
+  .header_logo_title {
+      font-size: 16px;
+  }
+
+  .header_profile_bar {
+      padding: 4px 10px 5px 4px;
+      border-radius: 10px;
+      margin-right: 0px;
+  }
+
+  .profile_bar_btn {
+      padding: 3px;
+      border-radius: 8px;
+      margin-right: 10px;
+  }
+
+  #profile_bar_icon {
+      width: 17px;
+  }
+
+  .profile_bar_indicator {
+      font-size: 12px;
+  }
+
+  .header_profile_menu {
+      display: none !important;
+  }
+}
+
+@import url("header_mobile.css");

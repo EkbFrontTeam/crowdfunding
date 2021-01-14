@@ -7,9 +7,10 @@ $(document).ready(function () {
         });
     })
 
+    
+    const btnContainer = $(".header_profile_btn");
+    const container = $(".header_profile_menu");
     $(document).mouseup(function (e) {
-        const btnContainer = $(".header_profile_btn");
-        const container = $(".header_profile_menu");
         // событие клика по веб документу
         if (! btnContainer.is(e.target) && btnContainer.has(e.target).length === 0 &&
         // если клик был не по нашему документу
