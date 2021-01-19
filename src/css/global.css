@@ -4,6 +4,21 @@ body {
   font-family: "SF Pro Display", sans-serif;
   font-style: normal;
   min-width: 320px;
+  padding-top: 68px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not_scroll {
+  overflow: hidden;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 input {
@@ -15,6 +30,7 @@ input {
   font-size: 16px;
   color: #fff;
 }
+
 input:focus {
   border-color: #6740c2;
 }
@@ -33,6 +49,7 @@ input:focus {
 
 .main_wrapper {
   background: #131419;
-  padding: 50px 15px;
+  padding: 25px 15px;
   width: 100%;
+  min-height: calc(100vh - 68px);
 }

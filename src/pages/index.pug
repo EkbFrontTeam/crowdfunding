@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-html(lang="ru")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title ?index page
-
-  body
-    include ../components/header/header.pug
-    main.page_index index
-    img(src='img/logo.jpg')
-    include ../components/footer/footer.pug
-
-    
-
+include ../components/header/header.pug
+main.main_wrapper
+  .top_button 
+    img(src="../../img/card/arrow.svg", alt="arrow") 
+  div.container  
+    h2.main_title Список заданий
+    .block_cards
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/skeleton.pug

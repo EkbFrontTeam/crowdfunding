@@ -1,14 +1,16 @@
 @import "reset.css";
 @import "global.css";
+@import "./buttons.css";
+@import "color.css";
 
 @import "../components/header/header.css";
-@import "../components/footer/footer.css";
+
 @import "../components/crowdHistory/progressTable.css";
 @import "../fonts/sfpro/stylesheet.css";
-@import "./buttons.css";
+
 @import "../components/project_card/project_card.css";
 @import "../components/project_card/skeleton.css";
-@import "./pages/list.css";
 
+/* PAGES */
 @import "./pages/index.css";
 @import "./pages/settings.css";
