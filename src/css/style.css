@@ -8,5 +8,9 @@
 @import "../components/crowdHistory/progressTable.css";
 @import "../fonts/sfpro/stylesheet.css";
 
+@import "../components/project_card/project_card.css";
+@import "../components/project_card/skeleton.css";
+
+/* PAGES */
 @import "./pages/index.css";
 @import "./pages/settings.css";

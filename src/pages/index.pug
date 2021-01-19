@@ -1,4 +1,19 @@
-<!DOCTYPE html>
-body
-  include ../components/header/header.pug
-  main.page_index index
+include ../components/header/header.pug
+main.main_wrapper
+  .top_button 
+    img(src="../../img/card/arrow.svg", alt="arrow") 
+  div.container  
+    h2.main_title Список заданий
+    .block_cards
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/project_card.pug 
+      include ../components/project_card/skeleton.pug

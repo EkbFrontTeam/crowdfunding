@@ -4,7 +4,7 @@ body {
   font-family: "SF Pro Display", sans-serif;
   font-style: normal;
   min-width: 320px;
-  padding-top: 50px;
+  padding-top: 68px;
 }
 
 .flex {
@@ -15,7 +15,7 @@ body {
 
 .not_scroll {
   overflow: hidden;
-  }
+}
 
 .pointer {
   cursor: pointer;
@@ -49,6 +49,7 @@ input:focus {
 
 .main_wrapper {
   background: #131419;
-  padding: 50px 15px;
+  padding: 25px 15px;
   width: 100%;
+  min-height: calc(100vh - 68px);
 }

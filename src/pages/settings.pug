@@ -1,35 +1,23 @@
-<!DOCTYPE html>
-html(lang="ru")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Мой профиль
-
-  body
-    include ../components/header/header.pug
-    main.main_wrapper
-      div.container
-        h2.main_title Мой профиль
-        .settings_wrapper
-          .user_media_wrapper
-            .user_media_photo
-              img(src="../img/settings/user-default_img.svg" alt="avatar" class="user_media_img")
-              button(class="upload_btn") Загрузить
-            include ../components/settings/socialConnect/socialConnectItem.pug
-            .user_media_social
-                h4.settings_subtitle Социальные сети
-                .social_connect_wrp
-                  each socialValues in [{socialImg: "../../img/settings/fb_icon.svg", altImg: 'Facebook', socialDescr: "Facebook"}, {socialImg: "../../img/settings/tw_icon.svg", altImg: 'Twitter', socialDescr: "Twitter"}, {socialImg: "../../img/settings/vk_icon.svg", altImg: 'ВКонтакте', socialDescr: "ВКонтакте"}]
-                    +socialItem(socialValues)
-          .user_data_wrapper
-            include ../components/settings/userData/userData.pug
-          .user_stats_wrapper
-            include ../components/settings/userStats/userStatsItem.pug
-            h4.settings_subtitle Моя статистика
-            .stats_wrapper
-              each statsValues in [{statsImg: "../../img/settings/stat-likes_icon.svg", altImg: 'likes', statsValue: 2562, statsDescr: 'Мне понравилось'}, {statsImg: "../../img/settings/stat-ref_icon.svg", altImg: 'referenced', statsValue: 15, statsDescr: 'Я пригласил'}, {statsImg: "../../img/settings/stat-days_icon.svg", altImg: 'days ago', statsValue: 329, statsDescr: 'Дней с регистрации'}, {statsImg: "../../img/settings/stat-spent_icon.svg", altImg: 'spent', statsValue: 1456.23, statsDescr: 'Потратил денег'}]
-                +statsItem(statsValues)
-    //- include ../components/footer/footer.pug
-
-    
-
+include ../components/header/header.pug
+main.main_wrapper
+  div.container
+    h2.main_title Мой профиль
+    .settings_wrapper
+      .user_media_wrapper
+        .user_media_photo
+          img(src="../img/settings/user-default_img.svg" alt="avatar" class="user_media_img")
+          button(class="upload_btn") Загрузить
+        include ../components/settings/socialConnect/socialConnectItem.pug
+        .user_media_social
+            h4.settings_subtitle Социальные сети
+            .social_connect_wrp
+              each socialValues in [{socialImg: "../../img/settings/fb_icon.svg", altImg: 'Facebook', socialDescr: "Facebook"}, {socialImg: "../../img/settings/tw_icon.svg", altImg: 'Twitter', socialDescr: "Twitter"}, {socialImg: "../../img/settings/vk_icon.svg", altImg: 'ВКонтакте', socialDescr: "ВКонтакте"}]
+                +socialItem(socialValues)
+      .user_data_wrapper
+        include ../components/settings/userData/userData.pug
+      .user_stats_wrapper
+        include ../components/settings/userStats/userStatsItem.pug
+        h4.settings_subtitle Моя статистика
+        .stats_wrapper
+          each statsValues in [{statsImg: "../../img/settings/stat-likes_icon.svg", altImg: 'likes', statsValue: 2562, statsDescr: 'Мне понравилось'}, {statsImg: "../../img/settings/stat-ref_icon.svg", altImg: 'referenced', statsValue: 15, statsDescr: 'Я пригласил'}, {statsImg: "../../img/settings/stat-days_icon.svg", altImg: 'days ago', statsValue: 329, statsDescr: 'Дней с регистрации'}, {statsImg: "../../img/settings/stat-spent_icon.svg", altImg: 'spent', statsValue: 1456.23, statsDescr: 'Потратил денег'}]
+            +statsItem(statsValues)

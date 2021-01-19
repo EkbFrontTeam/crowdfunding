@@ -1,3 +1,5 @@
+@import url("header_mobile.css");
+
 header {
   position: fixed;
   top: 0;
@@ -9,6 +11,7 @@ header {
   justify-content: space-between;
   background: var(--gray);
   z-index: 9999;
+  min-height: 68px;
 }
 
 .header_logo,
@@ -113,7 +116,7 @@ header {
 
 .header_profile_link {
   width: 100%;
-  color: var(--white); 
+  color: var(--white);
   font-size: 15px;
   padding: 20px 0;
 }
@@ -122,34 +125,27 @@ header {
   margin-left: 10px;
 }
 
-.profile_menu_item:nth-child(n+2):nth-child(-n+3) 
-.header_profile_link,
-.header_mobile_section 
-li:nth-child(n+3):nth-child(-n+4)
-.mobile_section_item {
+.profile_menu_item:nth-child(n + 2):nth-child(-n + 3) .header_profile_link,
+.header_mobile_section
+  li:nth-child(n + 3):nth-child(-n + 4)
+  .mobile_section_item {
   border-bottom: 1px solid var(--light_gray);
 }
 
-.profile_menu_item:hover:nth-child(-n+2) 
-.header_profile_link,
-.profile_menu_item:hover:nth-child(-n+2) 
-.header_profile_link 
-.profile_link_icon {
+.profile_menu_item:hover:nth-child(-n + 2) .header_profile_link,
+.profile_menu_item:hover:nth-child(-n + 2)
+  .header_profile_link
+  .profile_link_icon {
   color: var(--blue);
   fill: var(--blue);
 }
 
-.header_profile_menu 
-li:nth-child(3) 
-.header_profile_link {
+.header_profile_menu li:nth-child(3) .header_profile_link {
   cursor: auto;
 }
 
-.profile_menu_item:hover:last-child 
-.header_profile_link,
-.profile_menu_item:hover:last-child 
-.header_profile_link 
-.profile_link_icon {
+.profile_menu_item:hover:last-child .header_profile_link,
+.profile_menu_item:hover:last-child .header_profile_link .profile_link_icon {
   color: var(--red);
   fill: var(--red);
 }
@@ -186,65 +182,62 @@ li:nth-child(3)
 /*=== Media requests ===*/
 @media only screen and (max-width: 800px) {
   .header_bar {
-      display: none;
+    display: none;
   }
 
   #profile_link_aside {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      color: var(--white); 
-      font-size: 15px;
-      padding: 20px 0;
-    }
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-size: 15px;
+    padding: 20px 0;
+  }
 
   #profile_link_aside:hover {
-      color: var(--blue);
-  }  
+    color: var(--blue);
+  }
 
-  #profile_link_aside:hover 
-  .profile_link_icon {
-      fill: var(--blue);
+  #profile_link_aside:hover .profile_link_icon {
+    fill: var(--blue);
   }
 }
 
 /*max-width: 450px*/
 @media only screen and (max-width: 450px) {
   header {
-      padding: 12px 15px;
+    padding: 12px 15px;
   }
 
   .header_profile_btn {
-      display: none;
+    display: none;
   }
 
   .header_logo_title {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .header_profile_bar {
-      padding: 4px 10px 5px 4px;
-      border-radius: 10px;
-      margin-right: 0px;
+    padding: 4px 10px 5px 4px;
+    border-radius: 10px;
+    margin-right: 0px;
   }
 
   .profile_bar_btn {
-      padding: 3px;
-      border-radius: 8px;
-      margin-right: 10px;
+    padding: 3px;
+    border-radius: 8px;
+    margin-right: 10px;
   }
 
   #profile_bar_icon {
-      width: 17px;
+    width: 17px;
   }
 
   .profile_bar_indicator {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .header_profile_menu {
-      display: none !important;
+    display: none !important;
   }
 }
-
-@import url("header_mobile.css");
